@@ -24,8 +24,6 @@ $(document).ready(function() {
     const selectedTime = $("input:radio[name=time]:checked").val();
     const selectedAge = $("input:radio[name=age]:checked").val();
     let newMovie = new Movie("TRON", selectedTime, selectedAge);
-
-
     $(".show-price").show();
     $(".price").html("$" + price(newMovie.time, newMovie.age));
   });
